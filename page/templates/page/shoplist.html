@@ -1,0 +1,21 @@
+{% extends 'register/base.html' %}
+{% block content %}
+{% if request.user.pk == user.pk %}
+{% if shop_list %}
+{% for shop in shop_list %}
+    <div class="hello">
+        <p>{{ shop.name }}</p>
+    </div>
+    <p><a href="{% url 'page:shopupdate' shop.pk shop.slug %}">{{ shop.name }}更新ページへ</a></p>
+    <p class="last-p"><a href="{% url 'page:shoptop' shop.slug %}">{{ shop.name }}ショップページへ</a></p>
+{% endfor %}
+    <p class="last-p"><a href="{% url 'register:usertop' user.id %}">ユーザートップページへ戻る</a></p>
+
+{% else %}
+    <p class="last-p">お店がありません</p>
+{% endif %}
+{% else %}
+    <p class="last-p">お店がありません</p>
+{% endif %}
+{% comment %} {% endif %} {% endcomment %}
+{% endblock %}

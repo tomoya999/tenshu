@@ -1,0 +1,146 @@
+
+
+h1 {
+    color: rgb(255, 255, 103);
+    background-color: rgb(0, 103, 172);
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    margin-left: 10%;
+}
+
+h3 {
+    margin-left: 10%;
+}
+a {
+    color: rgb(0, 103, 172);
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+}
+
+form {
+    text-align: center;
+    padding-top: 50px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.menu .index p {
+    margin: 0 10% 0;
+    text-align: left;
+    
+}
+
+.form-group{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.form-control {
+    margin-bottom: 25px;
+    text-align: center;
+    margin-right: 0;
+    width: 90%;
+}
+
+.go-back{
+    margin: 10px 10px 0px 10px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.user-create-done p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.973);
+}
+.menu p {
+    text-align: center;
+}
+
+.first-p {
+    margin-top: 0;
+    padding-top: 25px;
+}
+
+.last-p {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+
+.no-margin {
+    margin-top: 0;
+    padding-top: 25px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+.hello p {
+    margin-top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(35, 144, 218);
+
+    color: rgb(255, 255, 188);
+
+}
+
+.errorlist {
+    margin-bottom: 25px;
+    margin-left: 10%;
+    padding: 0;
+    list-style-type: none;
+    color: red;
+    width: 80%;
+}
+
+
+
+footer {
+    color: rgb(255, 255, 103);
+    background-color: rgb(0, 103, 172);
+    text-align: center;
+}
+
+footer p {
+    margin-top: 0;
+
+}
+
+@media only screen and (min-width: 600px){
+
+    p {
+        font-size: 25px;
+    }
+    .form-group{
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .form-control {
+        margin-bottom: 25px;
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .form-group{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

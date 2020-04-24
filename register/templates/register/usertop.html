@@ -1,0 +1,30 @@
+{% extends 'register/base.html' %}
+{% block content %}
+{% if request.user.pk == object.pk %}
+
+    <div class="hello">
+        <p>ようこそ{{ user }}</p>
+    </div>
+        {% for shop in user.shop.all %}
+        {{ shop.name }}
+        {% endfor %}
+    {% comment %} <p><a href="{% url 'page:shoptop' shop.slug %}">{{ shop.name }}ショップページへ</a></p> {% endcomment %}
+
+    {% comment %} <p><a href="{% url 'page:shoptop' object.shop.slug %}">ショップページへ</a></p> {% endcomment %}
+    <p><a href="{% url 'register:email_change' %}">メールアドレスの変更</a></p>
+    <p><a href="{% url 'register:password_change' %}">パスワード変更</a></p>
+    <p></p>
+
+    <p><a href="{% url 'page:shoplist' user.id %}">お店サイト管理ページへ</a></p>
+
+
+    <p><a href="{% url 'page:shopcreate' user.id %}">新規お店サイト作成ページへ</a></p>
+    <p class="last-p"><a href="{% url 'register:logout' %}">ログアウト</a></p>
+
+{% else %}
+<p class="first-p">異常が発生しました</p>
+<p>お手数ですが再度ログインをお願い致します</p>
+<p class="last-p"><a href="{% url 'register:login' %}">ログイン</a></p>
+
+{% endif %}
+{% endblock  %}

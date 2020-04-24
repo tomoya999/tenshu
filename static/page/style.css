@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.twitter-timeline{
+    margin-left: 5%;
+}
+
+iframe{
+    margin-left: 5%;
+
+}
+
+table{
+    border-collapse:collapse;
+    margin:0 auto;
+    width: 90%;
+  }
+  td,th{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align: center;
+  }
+  th{
+    background:#EFEFEF;
+  }

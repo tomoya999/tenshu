@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'register/style.css' %}">
+    <title>店主.jp</title>
+</head>
+<body>
+    <header>
+    {% if messages %}
+    {# Django のメッセージに記録している内容があればここで表示 #}
+    <div class="container">
+           {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+    </div>
+    {% endif %}
+    <h1>店主.jp</h1>
+    </header>
+        <div class="menu">
+        {% block content %}
+        {% endblock  %}
+        </div>
+    <footer>
+  	<p>© All rights reserved by 店主.jp</p>
+  </footer>
+</body>
+</html>
