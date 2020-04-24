@@ -1,5 +1,7 @@
 config/settings/local.py
-
+.gitignore
+Pipfile
+.DS_Store
 # vscodeの設定ファイルをgit管理対象から外す
 .vscode/
 register/migrations
